@@ -1,0 +1,7 @@
+refresh_ceph_mon_conf.sh 刷新mon启动脚本。
+rebuildENV.sh            检查该脚本里的ip相关配置是否正确。 
+umountLibOSD.sh          卸载所有/var/lib/ceph/osd/ceph-0 ... 这个步骤一般要根据osd数量来执行，卸载上次挂载的。
+wipeOSD.sh               擦除上次的OSD
+synOsdKeyRing.sh         同步osd密钥，否则其余机器无法创建OSD。
+createOSD.sh             执行此命令之前先检查系统是否存在Ceph用户。
+startOSD.sh
